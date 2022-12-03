@@ -22,10 +22,10 @@ public class Conectores {
     public Connection getConexion() {
         Connection con = null;
         try {
-            JOptionPane.showMessageDialog(null, "Estableciendo conexion");
+            JOptionPane.showMessageDialog(null, "Loading..." ,"Estableciendo conexion a la BD",JOptionPane.WARNING_MESSAGE);
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(URL, USER, CLAVE);
-            JOptionPane.showMessageDialog(null, "Conexion exitosa");
+            JOptionPane.showMessageDialog(null, "Conexion exitosa", "EXITO",JOptionPane.CLOSED_OPTION);
         } catch (SQLException e) {
             System.out.println("Error: " + e.getMessage());
         } catch (ClassNotFoundException x) {
