@@ -75,8 +75,9 @@ public class Control_Login implements ActionListener{
         }
         //Guardar los datos ingresados a la BD
         if (e.getSource() == this.registro.JButtonRegistrar_Reg) {
-            
-            DaoPerson.guardar(0, Usuario= this.registro.UsuarioRegistro_txt.getText(),Passwd = this.registro.PasswdRegistro_txt.getText());
+            String a = this.registro.UsuarioRegistro_txt.getText();
+            String b = this.registro.PasswdRegistro_txt.getText();
+            DaoPerson.guardar(0,a,b);
             DaoPerson.Ingresar();
             limpiar();
         }

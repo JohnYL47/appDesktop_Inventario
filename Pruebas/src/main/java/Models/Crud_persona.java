@@ -86,7 +86,7 @@ public class Crud_persona extends Conectores {
         Connection con = getConexion();
         ResultSet rs = null;
         CallableStatement cst = null;
-        String sql = "{call usuarios(?,?,?)}";
+        String sql = "INSERT INTO usuarios(id,nombre,passwd) VALUES(?,?,?)";
 
         try {
             cst = con.prepareCall(sql);
