@@ -15,6 +15,7 @@ public class JfClient extends javax.swing.JFrame {
      */
     public JfClient() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

@@ -15,6 +15,7 @@ public class JfLogin extends javax.swing.JFrame {
      */
     public JfLogin() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -26,78 +27,77 @@ public class JfLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        JButtonIngresar_User2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
+        panelRound1 = new Jframes.PanelRound();
         jLabel1 = new javax.swing.JLabel();
         UsuarioLogin_txt = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        PasswdLogin_txt = new javax.swing.JTextField();
         JButtonIngresar_User = new javax.swing.JButton();
+        jLabel4 = new javax.swing.JLabel();
+        PasswdLogin_txt = new javax.swing.JPasswordField();
+        JButtonRegistrar_User = new javax.swing.JButton();
+        panelRound2 = new Jframes.PanelRound();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+
+        JButtonIngresar_User2.setBackground(new java.awt.Color(204, 204, 204));
+        JButtonIngresar_User2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        JButtonIngresar_User2.setText("Ingresar");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jPanel1.setBackground(new java.awt.Color(51, 51, 51));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        panelRound1.setBackground(new java.awt.Color(255, 255, 255));
+        panelRound1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setText("Login");
+        panelRound1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, -1, -1));
+        panelRound1.add(UsuarioLogin_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 150, -1));
 
-        jLabel2.setText("Usuario");
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel2.setText("Contraseña");
+        panelRound1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
 
-        jLabel3.setText("Contraseña");
-
+        JButtonIngresar_User.setBackground(new java.awt.Color(204, 204, 204));
+        JButtonIngresar_User.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         JButtonIngresar_User.setText("Ingresar");
+        panelRound1.add(JButtonIngresar_User, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, -1, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(PasswdLogin_txt, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                            .addGap(65, 65, 65)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel2)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addGap(34, 34, 34)
-                                    .addComponent(jLabel1))
-                                .addComponent(jLabel3)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addGap(6, 6, 6)
-                                    .addComponent(UsuarioLogin_txt, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(109, 109, 109)
-                        .addComponent(JButtonIngresar_User)))
-                .addContainerGap(85, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel1)
-                .addGap(48, 48, 48)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(UsuarioLogin_txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(PasswdLogin_txt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(JButtonIngresar_User)
-                .addContainerGap(43, Short.MAX_VALUE))
-        );
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel4.setText("Usuario");
+        panelRound1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, -1, -1));
+        panelRound1.add(PasswdLogin_txt, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 150, -1));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        JButtonRegistrar_User.setBackground(new java.awt.Color(204, 204, 204));
+        JButtonRegistrar_User.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        JButtonRegistrar_User.setText("Registrar");
+        panelRound1.add(JButtonRegistrar_User, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
+
+        jPanel1.add(panelRound1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 40, 240, 400));
+
+        panelRound2.setBackground(new java.awt.Color(102, 255, 102));
+        panelRound2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel5.setText("Back");
+        panelRound2.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel6.setText("Wellcome !");
+        panelRound2.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+
+        jPanel1.add(panelRound2, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 40, 260, 400));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon("C:\\Users\\JAMES\\Documents\\NetBeansProjects\\Pruebas\\src\\main\\java\\Wallpapers_Background\\controller-gde0804660_640.png")); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-100, 40, 640, 370));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 510));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -139,11 +139,18 @@ public class JfLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public javax.swing.JButton JButtonIngresar_User;
-    public javax.swing.JTextField PasswdLogin_txt;
+    public javax.swing.JButton JButtonIngresar_User2;
+    public javax.swing.JButton JButtonRegistrar_User;
+    public javax.swing.JPasswordField PasswdLogin_txt;
     public javax.swing.JTextField UsuarioLogin_txt;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
+    private Jframes.PanelRound panelRound1;
+    private Jframes.PanelRound panelRound2;
     // End of variables declaration//GEN-END:variables
 }

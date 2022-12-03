@@ -15,6 +15,7 @@ public class JfProveedor extends javax.swing.JFrame {
      */
     public JfProveedor() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

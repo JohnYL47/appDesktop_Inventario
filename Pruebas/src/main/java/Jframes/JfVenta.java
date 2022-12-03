@@ -15,6 +15,7 @@ public class JfVenta extends javax.swing.JFrame {
      */
     public JfVenta() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

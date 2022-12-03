@@ -12,4 +12,16 @@
         <exec.mainClass>com.mycompany.pruebas.Pruebas</exec.mainClass>
     </properties>
     <name>APruebas</name>
+    <dependencies>
+        <dependency>
+            <groupId>org.netbeans.external</groupId>
+            <artifactId>AbsoluteLayout</artifactId>
+            <version>RELEASE150</version>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.30</version>
+        </dependency>
+    </dependencies>
 </project>

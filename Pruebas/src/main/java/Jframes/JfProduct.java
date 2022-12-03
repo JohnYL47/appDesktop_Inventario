@@ -15,6 +15,7 @@ public class JfProduct extends javax.swing.JFrame {
      */
     public JfProduct() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

@@ -15,6 +15,7 @@ public class JfNewVenta extends javax.swing.JFrame {
      */
     public JfNewVenta() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

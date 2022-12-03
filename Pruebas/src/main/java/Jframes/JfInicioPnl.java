@@ -15,6 +15,7 @@ public class JfInicioPnl extends javax.swing.JFrame {
      */
     public JfInicioPnl() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -32,60 +33,84 @@ public class JfInicioPnl extends javax.swing.JFrame {
         JButtonProveedor_Inicio = new javax.swing.JButton();
         JButtonProducto_Inicio = new javax.swing.JButton();
         JButtonVenta_Inicio = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jPanel3 = new javax.swing.JPanel();
+        jPanel4 = new javax.swing.JPanel();
+        menuDesplegable_inicio = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         JButtonCliente_Inicio.setText("Cliente");
+        jPanel1.add(JButtonCliente_Inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 96, -1));
 
         JButtonNewVents_Inicio.setText("Nueva venta");
+        jPanel1.add(JButtonNewVents_Inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
 
         JButtonProveedor_Inicio.setText("Proveedor");
+        jPanel1.add(JButtonProveedor_Inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 96, -1));
 
         JButtonProducto_Inicio.setText("Producto");
+        jPanel1.add(JButtonProducto_Inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 96, -1));
 
         JButtonVenta_Inicio.setText("Venta");
+        jPanel1.add(JButtonVenta_Inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 96, -1));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(38, 38, 38)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(JButtonVenta_Inicio, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(JButtonNewVents_Inicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(JButtonCliente_Inicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(JButtonProveedor_Inicio, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(JButtonProducto_Inicio, javax.swing.GroupLayout.PREFERRED_SIZE, 96, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(44, Short.MAX_VALUE))
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 160, 370));
+
+        jPanel2.setBackground(new java.awt.Color(0, 0, 102));
+        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("Inicio");
+        jPanel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 6, -1, -1));
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 870, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(JButtonNewVents_Inicio)
-                .addGap(18, 18, 18)
-                .addComponent(JButtonCliente_Inicio)
-                .addGap(18, 18, 18)
-                .addComponent(JButtonProveedor_Inicio)
-                .addGap(18, 18, 18)
-                .addComponent(JButtonProducto_Inicio)
-                .addGap(18, 18, 18)
-                .addComponent(JButtonVenta_Inicio)
-                .addContainerGap(73, Short.MAX_VALUE))
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 241, Short.MAX_VALUE)
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jTabbedPane1.addTab("tab1", jPanel3);
+
+        jPanel2.add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 870, -1));
+
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 40, 890, 370));
+
+        jPanel4.setBackground(new java.awt.Color(51, 51, 51));
+
+        menuDesplegable_inicio.setText("|||");
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                .addContainerGap(991, Short.MAX_VALUE)
+                .addComponent(menuDesplegable_inicio, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel4Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(menuDesplegable_inicio)
+                .addContainerGap(11, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1050, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -131,6 +156,12 @@ public class JfInicioPnl extends javax.swing.JFrame {
     public javax.swing.JButton JButtonProducto_Inicio;
     public javax.swing.JButton JButtonProveedor_Inicio;
     public javax.swing.JButton JButtonVenta_Inicio;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    public javax.swing.JButton menuDesplegable_inicio;
     // End of variables declaration//GEN-END:variables
 }
